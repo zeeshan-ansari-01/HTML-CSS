@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<style>
+    div{
+        box-sizing: border-box;
+        width: 24vw;
+        height: 24vh;
+        border: 1px solid red;
+        float: left;
+    }
+</style>
+<body>
+<picture>
+  <!-- <source srcset="4.jpg"    > -->
+  <source srcset="2.jpeg" media="(max-width: 800px)">
+  <source srcset="3.jpeg" media="(max-width: 1200px)">
+   <img src="1.jpeg" alt="Flowers" style="width:auto;">
+</picture>
+<br><br>
+
+<form action="action.php">
+    <label>Name:</label><input type="name" name="fname" value=""><br><br>
+   <label> Last Name:</label><input type="name" name="lname" value=""><br><br>
+    <label>Password:</label><input type="password" name="password" value=""><br><br>
+    <label>Address:</label><input type="textbox" name="address" value=""><br><br>
+    <button type="submit">Submit</button>
+    <hr><hr>
+
+    <div>Hello1</div>
+    <div>Hello2</div>
+    <div>Hello3</div>
+    <div>Hello4</div>
+    <
+
+</body>
+</html>

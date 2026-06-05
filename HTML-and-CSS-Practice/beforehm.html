@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bclass::before{
+        content:"> "
+    }
+
+    .aclass::after{
+        content: " >";
+    }
+
+    button{
+        border:1px solid red;
+        color: white;
+        background-color: red;
+        font-size: larger;
+        width: 178.938px;
+        height: 54px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>Before Pseudo Class</h1>
+    <div>
+        <button class="bclass">Get Started</button>
+    </div>
+    <hr>
+    <h1>After Pseudo Class</h1>
+    <div>
+        <button class="aclass">Get Started</button>
+    </div>
+
+</body>
+</html>

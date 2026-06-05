@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Position</title>
+</head>
+<style>
+    .container{
+        border: 1px solid dodgerblue;
+        width: 500px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .item1{
+        position: relative;
+        left: 2px;
+        top: 2px;
+    }
+
+    .item2{
+        position: relative;
+        right: 2px;
+        top: 2px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="item1"><button>Button 1</button></div>
+        <div class="item2"><button>Button 2</button></div>
+    </div>
+</body>
+</html>
